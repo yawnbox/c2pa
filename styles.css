@@ -71,7 +71,7 @@ a:hover {
 }
 
 .camera-list h2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
@@ -111,7 +111,7 @@ footer {
 .camera-details span {
     flex: 1; /* Distributes equal space to each span */
     min-width: 150px; /* Minimum width to prevent collapsing */
-    font-size: 0.9em; /* Slightly smaller font for details */
+    font-size: 1rem; /* Slightly smaller font for details */
 }
 
 .camera-details strong {
@@ -120,10 +120,10 @@ footer {
 
 .update-required {
     color: red; /* Makes the firmware update version text red */
-    font-size: 1em; /* Ensures consistent font size */
+    font-size: 1rem; /* Ensures consistent font size */
 }
 
 .update-not-required {
     color: green; /* Makes the text "any" green */
-    font-size: 1em; /* Ensures consistent font size */
+    font-size: 1rem; /* Ensures consistent font size */
 }
