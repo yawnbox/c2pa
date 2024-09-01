@@ -117,3 +117,7 @@ footer {
 .camera-details strong {
     font-weight: bold; /* Make the labels bold */
 }
+
+.update-required {
+    color: red; /* Makes the firmware update version text red */
+}
