@@ -23,6 +23,12 @@ main {
     padding: 20px;
 }
 
+.scrollable-content {
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+}
+
 .camera-list {
     list-style-type: none;
     margin: 0;
