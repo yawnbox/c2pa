@@ -54,6 +54,9 @@ a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items horizontally */
 }
 
 .camera-list li {
@@ -62,6 +65,9 @@ a:hover {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
+    max-width: 800px; /* Limit the width to 800px */
+    width: 100%; /* Make the box take full width up to the max-width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
 }
 
 .camera-list h2 {
