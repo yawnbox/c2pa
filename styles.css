@@ -102,17 +102,18 @@ footer {
 }
 
 .camera-details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 10px; /* Space between columns */
-    padding: 10px 0; /* Space above and below the details */
+    display: flex; /* Use flexbox for a single-line layout */
+    justify-content: space-between; /* Distribute space evenly */
+    padding: 10px 0; /* Space around the content */
+    flex-wrap: wrap; /* Allows wrapping if the content is too wide */
 }
 
 .camera-details span {
-    font-size: 0.9em; /* Slightly smaller text for the details */
-    color: #333; /* Text color */
+    flex: 1; /* Distributes equal space to each span */
+    min-width: 150px; /* Minimum width to prevent collapsing */
+    font-size: 0.9em; /* Slightly smaller font for details */
 }
 
 .camera-details strong {
-    font-weight: bold; /* Bold labels */
+    font-weight: bold; /* Make the labels bold */
 }
