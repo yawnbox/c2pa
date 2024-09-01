@@ -100,3 +100,19 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
     text-align: center; /* Center-align the text */
 }
+
+.camera-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Space between columns */
+    padding: 10px 0; /* Space above and below the details */
+}
+
+.camera-details span {
+    font-size: 0.9em; /* Slightly smaller text for the details */
+    color: #333; /* Text color */
+}
+
+.camera-details strong {
+    font-weight: bold; /* Bold labels */
+}
