@@ -120,10 +120,10 @@ footer {
 
 .update-required {
     color: red; /* Makes the firmware update version text red */
-    font-size: inherit; /* Ensures it inherits the font size of the surrounding text */
+    font-size: 1em; /* Ensures consistent font size */
 }
 
 .update-not-required {
     color: green; /* Makes the text "any" green */
-    font-size: inherit; /* Ensures it inherits the font size of the surrounding text */
+    font-size: 1em; /* Ensures consistent font size */
 }
