@@ -10,6 +10,10 @@ body {
     background-color: #959595;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent body from scrolling */
 }
 
 header {
@@ -17,16 +21,25 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 main {
-    padding: 20px;
+    flex: 1; /* Allows the main content to expand */
+    margin-top: 60px; /* Adjust according to the header height */
+    margin-bottom: 40px; /* Adjust according to the footer height */
+    overflow: hidden; /* Prevents the main container from scrolling */
 }
 
 .scrollable-content {
     height: 100%;
-    overflow-y: auto;
+    max-height: calc(100vh - 100px); /* Adjust the height for header and footer */
+    overflow-y: auto; /* Enables vertical scrolling */
     padding: 20px;
+    background-color: #444; /* Darker background for better contrast */
 }
 
 a {
@@ -65,4 +78,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1;
 }
