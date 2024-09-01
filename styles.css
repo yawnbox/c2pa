@@ -29,6 +29,15 @@ main {
     padding: 20px;
 }
 
+a {
+    color: pink;
+    text-decoration: none; /* Optional: remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
 .camera-list {
     list-style-type: none;
     margin: 0;
