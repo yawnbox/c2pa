@@ -7,12 +7,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #acacac;
+    background-color: #959595;
     color: #333;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100vh; /* Full height of the viewport */
     overflow: hidden; /* Prevent body from scrolling */
 }
 
@@ -28,18 +28,17 @@ header {
 }
 
 main {
-    flex: 1; /* Allows the main content to expand */
-    margin-top: 60px; /* Adjust according to the header height */
-    margin-bottom: 40px; /* Adjust according to the footer height */
-    overflow: hidden; /* Prevents the main container from scrolling */
+    flex: 1;
+    padding: 20px;
+    padding-top: 80px; /* space for the fixed header */
+    padding-bottom: 60px; /* space for the fixed footer */
+    overflow-y: auto; /* Enables scrolling in the main area */
 }
 
 .scrollable-content {
-    height: 100%;
-    max-height: calc(100vh - 100px); /* Adjust the height for header and footer */
-    overflow-y: auto; /* Enables vertical scrolling */
-    padding: 20px;
-    background-color: #444; /* Darker background for better contrast */
+    max-height: 100%; /* Ensure it can scroll if needed */
+    overflow-y: auto;
+    padding-bottom: 20px; /* Prevent content from touching the footer */
 }
 
 a {
